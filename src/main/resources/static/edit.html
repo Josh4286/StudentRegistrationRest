@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students List</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link href="../bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet">
+ -->
+ <script src="../static/jquery_ajax.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Student Admin Panel</a>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto"></ul>
+          <a href="register.html"><button class="btn btn-primary my-2 my-sm-0">Register</button></a>
+          </form>
+        </div>
+      </nav>
+    <!-- <a href="register.html">Click here to register</a> -->
+
+    </div>
+    <div class="mx-auto" style="height: 1.625em;"></div>
+    <div class="row d-flex justify-content-center align-items-center" style="min-height: 90vh; max-width: 99vw; padding-left: 2em; ">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 jumbotron-fluid ">
+        <div class="jumbotron bg-light">
+          <h1>Edit Student</h1>
+          <div class="mx-auto" style="height: 1.625em;"></div>
+          <form onsubmit="event.preventDefault();">
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text" class="form-control" id="id" aria-describedby="idHelp" placeholder="Id" minlength="1" disabled>
+                <small id="idHelp" class="form-text text-danger"></small>
+              </div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Name" minlength="2" >
+              <small id="nameHelp" class="form-text text-danger"></small>
+            </div>
+            <div class="form-group">
+              <label for="street">Street</label>
+              <input type="text" class="form-control" id="street" placeholder="Street" minlength="2">
+              <small id="streetHelp" class="form-text text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="City" minlength="2">
+                <small id="cityHelp" class="form-text text-danger"></small>
+              </div>
+              <div class="form-group">
+                <label for="postcode">Post Code</label>
+                <input type="text" class="form-control" id="postcode" placeholder="Post Code" minlength="4" maxlength="4">
+                <small id="postcodeHelp" class="form-text text-danger"></small>
+              </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input class="form-control" type="date" id="dob"      name="dob"
+                    value="1998-01-01"
+                    min="1990-01-01" max="2006-12-31" disabled>
+                    <small id="dobHelp" class="form-text text-danger"></small>
+            </div>
+            <div class="mx-auto" style="height: 2em;"></div>
+            <button id="registerStudent" class="btn btn-primary" onClick="handleUpdate()">Save Changes</button>
+          </form>
+        </div>
+          
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </body>
+</html>
+
+
